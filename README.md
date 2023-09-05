@@ -11,11 +11,13 @@ In this project, we have two websites:
    - Frontend: React.js
    - Backend: Node.js and Express.js
    - URL: https://www.websiteA.com
+   - git repo: https://www.websiteA.com
 
 2. **Website B - Clients**:
    - Frontend: React.js
    - Backend: Node.js and Express.js
    - URL: https://www.websiteB.com
+   - git repo: https://www.websiteA.com
 
 Both websites share data from the same MongoDB database, allowing them to maintain data consistency while providing different user experiences.
 
