@@ -1,0 +1,27 @@
+button{
+  /* display:flex ;
+  align-content: center; */
+  width: 100%;
+}
+.log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+.center-content{
+  text-align: center;
+}
+.form-control{
+  width: 100%;
+}
+.btn{
+  margin-top: 10px ;
+}
+.form-group{
+  width: 100%;
+  display: grid;
+}
+.form-body{
+  width: 100%;
+}
