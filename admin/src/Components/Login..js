@@ -11,7 +11,7 @@ function Login({setLogin}) {
 
     try {
       // Send a login request to your server
-      const response = await axios.post("http://localhost:5000/api/login", {
+      const response = await axios.post("/api/login", {
         email,
         password,
       });

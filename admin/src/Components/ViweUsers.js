@@ -7,7 +7,7 @@ function ViweUsers() {
 
   useEffect(() => {
     // Fetch user data when the component mounts
-    axios.get('http://localhost:5000/api/view/users') // Replace with your API endpoint
+    axios.get('/api/view/users') // Replace with your API endpoint
       .then((response) => {
         setUsers(response.data);
         setLoading(false);

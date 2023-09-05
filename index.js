@@ -27,14 +27,14 @@ mongoose.connection.on("error", () => {
 });
 
 // Serve the frontend
-// app.use(express.static(path.join(__dirname, "drdoc/build")));
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "drdoc/build/index.html"), function (err) {
-//     if (err) {
-//       res.status(500).send(err);
-//     }
-//   });
-// });
+app.use(express.static(path.join(__dirname, "admin/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "admin/build/index.html"), function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
 
 
 

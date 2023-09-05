@@ -20,7 +20,7 @@ function CreateUser({setLoggedIn,setLogin}) {
 
     if (name && email && password) {
       try {
-        const response = await fetch('http://localhost:5000/api/create/user', {
+        const response = await fetch('/api/create/user', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function CreateUser({setLoggedIn,setLogin}) {
   };
 
   const fetchUserList = () => {
-    axios.get('http://localhost:5000/api/view/users')
+    axios.get('/api/view/users')
       .then((response) => {
         setUsers(response.data);
         setLoading(false);
